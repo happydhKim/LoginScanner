@@ -1,0 +1,33 @@
+<ion-header>
+  
+    <!--<ion-title>JoyScanner</ion-title>-->
+    JoyScanner
+     <!--<button ion-button (click)="logout()"><ion-icon right name="more"></ion-icon></button>-->
+     <button ion-button float-right color="Dark" (click)="logout()">로그아웃</button>
+  
+</ion-header>
+<ion-content padding>
+  <div>
+  <button ion-button (click)="scan(1)" class="button button-full button-positive">
+    송장출력 확인
+  </button>
+
+  <button ion-button (click)="scan(2)" class="button button-full button-positive">
+    송장 배송완료
+  </button>
+
+  <!--<button ion-button (click)="scan(3)" class="button button-full button-positive">
+    Nothing
+  </button>-->
+  </div>
+
+  <p>
+    위의 각 버튼을 누르면 해당 기능을 가진 QRcode Scanner가 작동 됩니다.
+  </p>
+ <!-- <h1>취소 여부 : {{data.cancelled}}</h1>
+  <h1>{{data.format}} 번호 : {{data.text}}</h1>
+  
+  <h1>text : {{data.text}}{{type}}</h1>
+
+  <h3>parameter : {{parameter1}}</h3> -->
+</ion-content>
